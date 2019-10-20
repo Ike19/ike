@@ -48,4 +48,13 @@ data class ResultsItem(
 
 	@field:SerializedName("vote_count")
 	val voteCount: Int? = null
-): Parcelable
+): Parcelable {
+	companion object{
+		const val TABLE_FAVORITE = "table_favorite"
+		const val COLUMN_ID = "ID"
+		const val COLUMN_POSTERPATH = "POSTERPATH"
+		const val COLUMN_RATING = "RATING"
+		const val COLUMN_DESCRIPTION = "DESCRIPTION"
+		const val COLUMN_TITLE = "TITLE"
+	}
+}

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.contstraintlayout.widget.ConstraintLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -29,6 +29,19 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_title_movie" />
 
+    <Button
+        android:id="@+id/btn_favorit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp"
+        android:text="♥Favorit♥"
+        android:textSize="20dp"
+        android:background="@drawable/bg_button"
+        app:layout_constraintTop_toBottomOf="@id/iv_poster_movie"/>
+
+
     <TextView
         android:id="@+id/tv_rating_movie"
         android:layout_width="wrap_content"
@@ -36,7 +49,7 @@
         android:layout_marginTop="20dp"
         android:textSize="16sp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/iv_poster_movie"
+        app:layout_constraintTop_toBottomOf="@id/btn_favorit"
         tools:text="Peringkat:72" />
 
     <TextView
@@ -50,4 +63,6 @@
         app:layout_constraintTop_toBottomOf="@id/tv_rating_movie"
         tools:text="DeskripsiFilmXXXX" />
 
-</androidx.contstraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
