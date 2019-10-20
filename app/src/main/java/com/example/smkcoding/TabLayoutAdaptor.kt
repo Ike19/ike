@@ -8,8 +8,7 @@ import androidx.fragment.app.FragmentStatePagerAdapter
 
 class TabLayoutAdaptor
     (fm: FragmentManager, context: Context)
-    : FragmentStatePagerAdapter(fm)
-{
+    : FragmentStatePagerAdapter(fm) {
     override fun getItem(position: Int): Fragment {
         val movieFragment = MovieFragment()
 
@@ -19,7 +18,7 @@ class TabLayoutAdaptor
             1 -> bundle.putString("KEY", "TV")
         }
 
-        movieFragment  .arguments = bundle
+        movieFragment.arguments = bundle
 
         return movieFragment
     }
